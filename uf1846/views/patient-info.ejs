@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Información del Paciente</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+</head>
+
+<body class="container-fluid">
+    <h1>Información del Paciente</h1>
+
+    <% if (patient) { %>
+        <article>
+            <p>Número de la Seguridad Social: <%= patient.ssn %>
+            </p>
+            <p>Nombre: <%= patient.firstName %>
+                    <%= patient.lastName %>
+            </p>
+            <p>Fecha de nacimiento: <%= patient.birthDate.toLocaleDateString() %>
+            </p>
+            <% } else { %>
+                <p>
+                    <%= message %>
+                </p>
+                <% } %>
+        </article>
+
+        <a href="/form">Buscar otro paciente</a>
+</body>
+
+</html>

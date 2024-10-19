@@ -1,0 +1,3 @@
+Se ha realizado una consulta sobre el paciente con SSN 67890123456
+Se ha realizado una consulta sobre el paciente con SSN 45678901210
+Se ha realizado una consulta sobre todos los pacientes en la base de datos
